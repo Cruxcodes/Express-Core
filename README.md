@@ -1,2 +1,4 @@
 # Express-Core
-Add collaborator :Emma
+## Welcome collaborator! 👋 
+1) Emma
+2} Peter Samuel

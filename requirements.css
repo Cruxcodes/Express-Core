@@ -1,0 +1,165 @@
+/* import font family */
+@import url("https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+/* end of import */
+
+
+/* variable specification */
+:root {
+    --font-family1: "Plus Jakarta Sans";
+    --font-family2: "Poppins";
+    --primary-Color: #1F78FF;
+}
+
+/* end variable specification */
+
+
+/* default css reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* end css reset */
+
+/* desktop breakpoint */
+
+@media screen and (max-width:1440px) {
+    body {
+        font-family: var(--font-family1);
+    
+    }
+    
+    .top-login-option {
+        padding-top: 58px;
+        float: right;
+        right: 0px
+    }
+    
+    .intro-heading {
+        font-weight: 800;
+        padding-top: 98px;
+        text-align: center;
+    }
+    
+    .main-container {
+        height: 100%;
+        margin: 0px 4rem;
+    }
+    
+    .footer-main-container {
+        padding-top: 10%;
+        bottom: 0px;
+        text-align: center;
+    }
+    
+    h2 {
+        padding-bottom: 1rem;
+        font-weight: 900;
+    }
+    
+    h4 {
+        padding: 1em 0em;
+        font-weight: 600;
+    }
+    
+    .top-login-option>a {
+        color: var(--primary-Color);
+        cursor: pointer;
+    }.requirement-paragraph{
+        line-height: 36px;
+    }
+    
+    .requirement-lists>li {
+        margin: 0px 1.58rem;
+        line-height: 36px;
+    }
+    
+    .requirement-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        text-align: center;
+    }
+    
+    .requirement-button-container>a {
+        color: white;
+        width: 536px;
+        background-color: var(--primary-Color);
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(31, 120, 255, 0.25);
+        align-self: center;
+        border-radius: 12px;
+    }
+    
+}
+/* mobile  breakpoint */
+@media screen and (max-width:414px) {
+
+    .top-login-option {
+        padding-top: 58px;
+        text-align: center;
+    }
+
+    .intro-heading {
+        font-weight: 800;
+        padding-top: 98px;
+        text-align: center;
+    }
+
+    .main-container {
+        height: 100%;
+        margin: 0px 1rem;
+    }
+
+    .footer-main-container {
+        bottom: 0px;
+    }
+    h2{
+        padding-bottom: 1rem;
+        font-weight: 900;
+    }
+    
+    h4 {
+        padding: 1em 0em;
+        font-weight: 600;
+    }
+    
+    .top-login-option>a {
+        color: var(--primary-Color);
+        cursor: pointer;
+    }
+    
+    .requirement-lists>li {
+        margin: 0px 1.58rem;
+    }
+    .requirement-paragraph{
+        line-height: 26px;
+        
+        word-break: keep-all;
+    }
+    
+    .requirement-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        text-align: center;
+    }
+    
+    .requirement-button-container>a {
+        color: white;
+        
+        background-color: var(--primary-Color);
+        padding: 10px;
+        box-shadow: 0px 1px 5px rgba(31, 120, 255, 0.25);
+        align-self: center;
+        border-radius: 12px;
+        font-size: small;
+    }
+
+}

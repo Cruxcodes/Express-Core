@@ -49,7 +49,7 @@
     
     .main-container {
         height: 100%;
-        Padding: 0px 70px;
+        padding: 0px 100px;
     }
     
     .footer-main-container {
@@ -114,7 +114,7 @@
 
     .main-container {
         height: 100%;
-        margin: 0px 2%;
+        padding: 0px  2%;
     }
 
     .footer-main-container {

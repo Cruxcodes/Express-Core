@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 1rem 3rem;
+    background: #fff;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+}
+.logo img{
+    max-width: 60px;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+}
+.nav-menu li{
+    list-style-type: none;
+    margin: 0rem 1.5rem;
+    display: inline;
+}
+body{
+    background: #F5F5F6;
+}
+.nav-menu li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: normal;
+}
+.nav-menu li a:hover{
+    border-bottom: 2px solid #1F78FF;;
+}
+.login{
+    margin: 0.5rem;
+}
+.login a{
+    text-decoration: none;
+    margin: 0rem 0.6rem;
+    color: #000;
+    font-size: 1.1rem;
+}
+.login #sign-up{
+    border: 1.5px solid #1F78FF;
+    padding: 8px 12px;
+    border-radius: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bar{
+    color: black;
+    display: block;
+    width: 25px;
+    height: 3px;
+    display: none;
+    /*font-size: 1.5rem;
+    font-weight: 500;
+    margi: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;*/
+
+}

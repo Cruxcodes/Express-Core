@@ -51,7 +51,7 @@
     .main-container {
 
         height: 100%;
-        Padding:0em 100px;
+        Padding-left:100px;
     }
     
     .footer-main-container {
@@ -117,7 +117,7 @@
     .main-container {
         
         height: 100%;
-        Padding:0em 25px;
+        Padding-left:25px;
     }
 
     .footer-main-container {

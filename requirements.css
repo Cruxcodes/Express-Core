@@ -10,6 +10,7 @@
     --font-family1: "Plus Jakarta Sans";
     --font-family2: "Poppins";
     --primary-Color: #1F78FF;
+    --logo:url("./images/logo.png")
 }
 
 /* end variable specification */
@@ -34,6 +35,12 @@
     body {
         font-family: var(--font-family1);
     
+    }
+    .logo>a{
+        content:var(--logo);
+        width:70%;
+        align-self: center;
+        
     }
     .intro-container{
         padding:89px 0% 0% 0%;

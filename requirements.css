@@ -40,7 +40,7 @@
         content:var(--logo);
         width:70%;
         align-self: center;
-        
+
     }
     .intro-container{
         padding:89px 0% 0% 0%;
@@ -127,7 +127,7 @@
     .main-container {
         
         height: 100%;
-         padding:0px 0.2%;
+         padding:0px 5%;
     }
 
     .footer-main-container {

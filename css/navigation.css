@@ -7,12 +7,12 @@
 body{
     background: #F5F5F6;
 }
+/*======header==========*/
 nav{
     width: 100%;
     height: 70px;
     padding: 1rem 1.8rem;
     background: #fff;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -25,27 +25,58 @@ nav{
     height: auto;
     margin-top: 0.5rem;
 }
-.nav-menu{
+navbar{
+    margin: auto;
+}
+navbar ul{
     display: flex;
     flex-direction: row;
 }
-.nav-menu li{
+navbar ul li{
     list-style-type: none;
     margin: 0rem 1.1rem;
     display: inline;
 }
-.nav-menu li a{
+
+navbar ul li a{
     color: #000;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     text-transform: capitalize;
     cursor: pointer;
     font-weight: 600;
     font-style: normal;
 }
-.nav-menu li a:hover{
+navbar ul li a:hover{
     border-bottom: 2px solid #1F78FF;;
 }
+
+/*==========dropdown ul styling==============*/
+/*.ul-2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    background-color: #1F78FF;
+    padding: 0.5rem 0rem;
+    visibility: hidden;
+}
+.ul-2 li{
+    list-style: none;
+    padding: 0.5rem 0rem;
+    display: block;
+}
+
+.ul-2 li a{
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.show{
+    visibility: visible;
+}*/
+
+/*======login and sign up button========*/
 .login{
     display: flex;
     flex-direction: row;
@@ -63,9 +94,11 @@ nav{
     padding: 8px 12px;
     border-radius: 0.3rem;
 }
+/*===========hamburger=========*/
 .hamburger{
     display: none;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 0.3rem;
 }
 .bar{
     color: black;
@@ -73,14 +106,16 @@ nav{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+/*=============media query===========*/
 @media screen and (max-width:850px){
-    .nav-menu li a{
+    navbar ul li{
+        margin: 0rem 0.8rem;
+        display: inline;
+    }
+    navbar ul li a{
         font-size: 15px;
         font-weight: 600;
-    }
-    .nav-menu li{
-        margin: 0rem 0.9rem;
-        display: inline;
     }
     .logo img{
         max-width: 50px;
@@ -96,34 +131,32 @@ nav{
 
 
 @media screen and (max-width:768px){
-    .nav-menu{
+    navbar{
+        position: absolute;
+        top: 61px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        transition-duration: all 1s ease;
+        height: 0;
+        overflow: hidden;
+    }
+    navbar ul{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        top: 70px;
-        left: 0;
-        padding: 1.3rem 0rem;
-        position: fixed;
-        background: #1F78FF;
-        color: #fff;
-        width: 100%;
         height: 300px;
-        gap: 0;
+        margin: 0.5rem auto 0rem 0rem;
+        padding: 1rem 0rem;
+        /*transition: 0.5s;*/
+        background: #1F78FF;
+        text-align: center;
         transition: all 0.5s ease-in-out;
         transition-duration: all 2s ease;
+        width: 100%;
     }
-    .nav-menu li{
-        margin: 1rem 0rem;
-    }
-    .nav-menu li a{
-        color: #fff;
-        font-size: 1.1rem;
-    }
-    .nav-menu li a:hover{
-        border-bottom: 2px solid #000;
-    }
-    .nav-menu .active{
-        left: 0;
+    .active{
+        height: 300px;
     }
     .hamburger{
         display: block;
@@ -138,19 +171,27 @@ nav{
         height: 8px;
         line-height: 0.4;
         width: 45px;
-        font-weight: 500;
+        font-weight: 900;
         margin: 1px auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
+
     }
-    .hamburger .active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
-    .hamburger .active .bar:nth-child(1){
-        transform: translate(8px) rotate(45deg);
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(30deg);
     }
-    .hamburger .active .bar:nth-child(3){
-        transform: translate(-8px) rotate(-45deg);
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-20px) rotate(-30deg);
+    }
+    navbar ul li{
+        margin: 1rem 0rem;
+    }
+    navbar ul li a{
+        color: #fff;
+        font-size: 1rem;
     }
     .logo img{
         max-width: 50px;
@@ -165,15 +206,16 @@ nav{
         padding: 1rem;
     }
     .login a{
-        text-decoration: none;
         margin: 0rem 0.3rem;
-        color: #000;
         font-size: 1rem;
     }
     .login #sign-up{
-        border: 1.5px solid #1F78FF;
         padding: 5px 8px;
         border-radius: 0.3rem;
+    }
+    .logo img{
+        max-width: 45px;
+        width: 100%;
     }
 }
 
@@ -181,7 +223,7 @@ nav{
     .hamburger{
         display: block;
         margin: auto;
-        padding-left: 3.5rem;
+        padding-left: 3rem;
     }
     .bar{
         line-height: 0.4;
@@ -190,18 +232,3 @@ nav{
         padding: 1rem 0.6rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

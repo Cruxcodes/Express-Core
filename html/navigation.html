@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--#0D326B;footer-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,35 +20,32 @@
         <div class="logo">
             <a href="#"><img src="../images/logo.png" alt="page-logo"></a>
         </div>
-        <div class="hamburger" style="display: block;">
+        <div class="hamburger" id="hamburger"  onclick="">
             <span class="bar">—</span>
             <span class="bar">—</span>
             <span class="bar">—</span>
         </div>
-        <navbar>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href=""> services
-                        <ul style="display: none;">
-                            <li><a href="#">service1</a></li>
-                            <li><a href="#">service2</a></li>
-                            <li><a href="#">service3</a></li>
-                            <li><a href="#">service4</a></li>
-                        </ul>
-                    </a>
+        <navbar class="links-wrapper">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="">services </a><span id="dropdown"> </span>
+                    <ul class="ul-2" id="service" style="display: none;">
+                        <li class="drop"><a href="#">service1</a></li>
+                        <li class="drop"><a href="#">service2</a></li>
+                        <li class="drop"><a href="#">service3</a></li>
+                        <li class="drop"><a href="#">service4</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a href=""> resources
-                        <ul style="display: none;">
-                            <li><a href="#">resources1</a></li>
-                            <li><a href="#">resources2</a></li>
-                            <li><a href="#">resources3</a></li>
-                            <li><a href="#">resources4</a></li>
-                        </ul>
-                    </a>
+                    <a href=""> resources </a><span id="dropdown-1"></span>
+                    <ul class="ul-2" id="resources" style="display: none;">
+                        <li class="drop"><a href="#">resources1</a></li>
+                        <li class="drop"><a href="#">resources2</a></li>
+                        <li class="drop"><a href="#">resources3</a></li>
+                        <li class="drop"><a href="#">resources4</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item"><a href="#">partner</a></li>
-                <li class="nav-item"><a href="#">about</a</li>
+                <li class="nav-item"><a href="#about">about</a</li>
                 <li class="nav-item"><a href="#">contact us</a</li>
             </ul>
         </navbar>
@@ -58,6 +55,6 @@
         </div>
 
     </nav>
-
+    <script src="../js/app.js"></script>
 </body>
 </html>

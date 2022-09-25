@@ -6,15 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="requirements.css" />
+    <link rel="stylesheet" href="./css/navigation.css">
+    <script src="./js/app.js" defer></script>
     <title>Requirements</title>
 </head>
 
 <body>
-    <header>header</header>
+    <header><nav>
+        <div class="logo">
+            <a href="#"><img src="../images/logo.png" alt="page-logo"></a>
+        </div>
+        <div class="hamburger" id="hamburger"  onclick="">
+            <span class="bar">—</span>
+            <span class="bar">—</span>
+            <span class="bar">—</span>
+        </div>
+        <navbar class="links-wrapper">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="">services </a><span id="dropdown"> </span>
+                    <ul class="ul-2" id="service" style="display: none;">
+                        <li class="drop"><a href="#">service1</a></li>
+                        <li class="drop"><a href="#">service2</a></li>
+                        <li class="drop"><a href="#">service3</a></li>
+                        <li class="drop"><a href="#">service4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href=""> resources </a><span id="dropdown-1"></span>
+                    <ul class="ul-2" id="resources" style="display: none;">
+                        <li class="drop"><a href="#">resources1</a></li>
+                        <li class="drop"><a href="#">resources2</a></li>
+                        <li class="drop"><a href="#">resources3</a></li>
+                        <li class="drop"><a href="#">resources4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#">partner</a></li>
+                <li class="nav-item"><a href="#about">about</a</li>
+                <li class="nav-item"><a href="#">contact us</a</li>
+            </ul>
+        </navbar>
+        <div class="login">
+            <a href="#" id="log-in">Log in</a>
+            <a href="#" id="sign-up">Sign up</a>
+        </div>
+
+    </nav>
+    
+</header>
     <main role="main" >
         <section class="main-container">
-            <div>
-                <p class="top-login-option">Already With Us <a href="">Login</a></p>
+            <div class="intro-container">
+                <p class="top-login-option">Already with us <a href="">Log in</a></p>
                 <h2 class="intro-heading">Sign Up as a Partner (Rider/Driver)</h2>
             </div>
             <article>

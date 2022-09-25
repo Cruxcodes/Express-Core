@@ -101,7 +101,7 @@
     
 }
 /* mobile  breakpoint */
-@media screen and (max-width:414px) {
+@media screen and (max-width:414px),(max-width:540px) {
 
     .top-login-option {
         padding-top: 58px;

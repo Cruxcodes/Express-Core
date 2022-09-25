@@ -33,26 +33,29 @@
 @media screen and (max-width:1440px) {
     body {
         font-family: var(--font-family1);
-       
     
+    }
+    .intro-container{
+        padding:89px 0% 0% 0%;
     }
     
     .top-login-option {
-        padding-top: 58px;
-        float: right;
-        right: 0px
+        padding: 10px 0px 0px 0px ;
+        font-weight: 400;
+        text-align: right;
+        font-family: "Poppins";
     }
     
     .intro-heading {
         font-weight: 800;
-        padding-top: 98px;
+        padding: 10px 0px 64px 0px ;
         text-align: center;
     }
     
     .main-container {
-
+        
         height: 100%;
-        padding: 0% 10%;
+        padding: 0% 5%;
         
     }
     
@@ -105,21 +108,19 @@
 /* mobile  breakpoint */
 @media screen and (max-width:414px),(max-width:540px) {
 
-    .top-login-option {
-        padding-top: 58px;
-        text-align: center;
+    .intro-container{
+        padding:89px 0% 0% 0%;
     }
-
     .intro-heading {
         font-weight: 800;
-        padding-top: 98px;
+        padding: 10px 0px 54px 0px ;
         text-align: center;
     }
 
     .main-container {
         
         height: 100%;
-         padding:0px 0.5%;
+         padding:0px 0.2%;
     }
 
     .footer-main-container {
@@ -138,6 +139,7 @@
     .top-login-option>a {
         color: var(--primary-Color);
         cursor: pointer;
+        
     }
     
     .requirement-lists>li {

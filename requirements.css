@@ -22,6 +22,7 @@
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
+    
 }
 
 
@@ -32,6 +33,7 @@
 @media screen and (max-width:1440px) {
     body {
         font-family: var(--font-family1);
+       
     
     }
     
@@ -48,8 +50,10 @@
     }
     
     .main-container {
+
         height: 100%;
-        Padding: 0px 10%;
+        padding: 0% 10%;
+        
     }
     
     .footer-main-container {
@@ -113,8 +117,9 @@
     }
 
     .main-container {
+        
         height: 100%;
-        padding: 0px 5%;
+         padding:0px 0.5%;
     }
 
     .footer-main-container {

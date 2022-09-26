@@ -11,7 +11,7 @@ body{
     background: #0D326B;
     width: 100%;
     height: auto;
-    padding: 4rem 3rem;
+    padding: 4rem 3rem 2.5rem 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

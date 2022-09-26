@@ -70,7 +70,7 @@ navbar ul li a:hover{
 .user #sign-up{
     border: 1.5px solid #1F78FF;
     padding: 4px 5px;
-
+    color: #1F78FF;;
     border-radius: 0.3rem;
 }
 
@@ -131,7 +131,7 @@ navbar ul li a:hover{
         padding: 1rem 1.3rem;
     }
     navbar ul li{
-        margin: 0rem 0.8rem;
+        margin: 0rem 0.7rem;
         display: inline;
     }
     navbar ul li a{
@@ -139,7 +139,7 @@ navbar ul li a:hover{
         font-weight: 500;
     }
     .user{
-        margin-left: 3rem;
+        margin-left: 2.7rem;
     }
     .logo img{
         max-width: 50px;
@@ -172,7 +172,7 @@ navbar ul li a:hover{
         height: 350px;
         margin: 0.5rem auto 0rem 0rem;
         padding: 1rem 0rem;
-        background: #1F78FF;
+        background: #0D326B;
         text-align: center;
         transition: all 0.5s ease-in-out;
         transition-duration: all 2s ease;

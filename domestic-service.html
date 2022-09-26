@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="requirements.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="./requirement.js" defer></script>
     <title>Domestic service</title>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">
                 <a href="#"><img src="../images/logo.png" alt="page-logo"></a>
             </div>
-            <div class="hamburger" id="hamburger"  onclick="">
+            <div class="hamburger" id="hamburger" onclick="">
                 <span class="bar">—</span>
                 <span class="bar">—</span>
                 <span class="bar">—</span>
@@ -39,69 +43,178 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a href="#">partner</a></li>
-                    <li class="nav-item"><a href="#about">about</a</li>
-                    <li class="nav-item"><a href="#">contact us</a</li>
+                    <li class="nav-item"><a href="#about">about</a< /li>
+                    <li class="nav-item"><a href="#">contact us</a< /li>
                 </ul>
             </navbar>
             <div class="login">
                 <a href="#" id="log-in">Log in</a>
                 <a href="#" id="sign-up">Sign up</a>
             </div>
-    
+
         </nav>
-        
+
     </header>
     <main role="main">
-       <section class="main">
-        <div class="intro-container">
-            <div class="service-heading">
-                <div class="service-pagenation">
-                    <a href="">Our Services</a>
-                </div>  
+        <section class="top-service-heading">
+            <div class="service-main-heading main-container">
+                <h1>Domestic Service</h1>
             </div>
-        </div>
-        
-       </section>
-       <section class=""> 
-        <div class="service-main-heading main-container">
-            <h1>Domestic Service</h1>
-        </div>
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="./images/service-hero1.png" alt="" srcset="">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="./images/Frame 34763.png" alt="" srcset="">
+                </div>
             </div>
-        </div>
-        <div class="">
-            <div class="domestic-destribition-heading main-container">
-                <div class="distribution-service "><h1>Distribution and transportation services <i class="cadet-icon-up"></i></h1> </div>
-            </div>
-            <div class="distribution-service-content ">
-                <div class="distribution-image">
-                    <img src="./images/van.png" alt="" >
+            <div class="">
+                <div class="domestic-distribition-heading">
+                    <div class="distribution-service" id="distribution-service">
+                        <h4>Distribution and transportation services
+                            <i class="cadet-icon-up cadet-icon-down" id="cadet1"></i>
+                        </h4>
+                    </div>
                 </div>
 
-            </div>
-            <div class="main-container">
-                <div>
-                    <ul class="distribution-list">
-                        <li><span class="">Parcels and Documents</span>
-                            <br>
-                            <p>We offer our customers the facility of Parcel Booking to any corner of the country. To ensure safety, we package and send parcels as per the standards of the industry. In addition to this, we also offer our customers’ the facility of parcel packaging as per their specifications.</p>
-                        </li>
-                        <li><span>Rental Services</span> <br>
-                            <p>With our “Moving and Trucking network” we offer service to and fro within Nigeria. We will move your ground freight regardless of size or weight. </p>
-                            <p>We offer “Cartons Booking” and they are used for the safe transportation of parcel cargo, electrical & electronics goods, courier parcels, domestic goods & commodities and others. These containers are custom built and have aesthetic appearance.</p>
-                        </li>
-                    </ul>
+                <div class="main-container">
+
+                    <div id="domestic-content-container">
+                        <div class="distribution-service-content ">
+                            <div class="distribution-image">
+                                <img src="./images/Frame 34758.png" alt="">
+                            </div>
+                        </div>
+                        <ul class="distribution-list">
+                            <li>
+                                <span class="">Parcels and Documents</span>
+
+                                <br>
+                                <p>We offer our customers the facility of Parcel Booking to any corner of the country.
+                                    To ensure safety, we package and send parcels as per the standards of the industry.
+                                    In addition to this, we also offer our customers’ the facility of parcel packaging
+                                    as per their specifications.</p>
+                            </li>
+                            <li><span>Rental Services</span> <br>
+                                <p>With our “Moving and Trucking network” we offer service to and fro within Nigeria. We
+                                    will move your ground freight regardless of size or weight. </p>
+                                <p>We offer “Cartons Booking” and they are used for the safe transportation of parcel
+                                    cargo, electrical & electronics goods, courier parcels, domestic goods & commodities
+                                    and others. These containers are custom built and have aesthetic appearance.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-       </section>
+            <!-- end of distribution transportation -->
+
+            <div class="courier-service">
+                <div class="domestic-distribition-heading">
+                    <div class="distribution-service">
+                        <h4>Courier services
+                            <i class="cadet-icon-up cadet-icon-down"></i>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="main-container">
+
+                    <div class="domestic-content-container">
+                        <div class="distribution-service-content ">
+                            <div class="distribution-image">
+                                <img src="./images/Frame 34759.png" alt="">
+                            </div>
+                        </div>
+                        <ul class="distribution-list">
+                            <strong>If you’re sending important items via courier, then it’s wise to choose a partner
+                                that you can trust throughout the whole process.
+                                <span>Express Core</span> delivers you with a lot of perks like;</strong>
+                            <li>
+                                <span class="">Speed and Efficiency</span>
+
+                                <br>
+                                <p>
+                                    We consider the volumes of packages and letters and the speed at which we process
+                                    all the mails and also generally deliver shipments.
+                                </p>
+                            </li>
+                            <li><span>Fewer Size Restrictions</span> <br>
+                                <p>
+                                    What sets us apart from regular postal services is that we have fewer weight and
+                                    size restrictions when it comes to shipping goods.
+                                </p>
+                            </li>
+                            <li><span>Real-Time Tracking</span> <br>
+                                <p>
+                                    Express Core provides you with real-time tracking so you know exactly where your
+                                    shipments are and when it arrives. You also have the ability to contact us to ask
+                                    for updates as well.
+                                </p>
+                            </li>
+                            <li><span>Professional Packaging</span> <br>
+                                <p>
+
+                                    We ensure your goods are packed correctly and meet the necessary specifications.
+                                    .
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <article>
+        <div class="footer-cta">
+           <div class="footer-contact-us">
+            <a href="">Contact us online</a>
+           </div>
+           <div class="footer-contact-img">
+            <img src="./images/image 13.png" alt="">
+           </div>
+
+        </div>
+    </article>
+    <footer><!-------footer---->
+        <section class="footer-wrapper">
+            <div class="footer-box" id="part-1">
+                <h5>Subscribe to our newsletter</h5>
+               <div class="subscribe">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+               </div>
+
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="page-logo">
+                </div>
+                <span>&copy; 2022 ExpressCore LTD  All Rights Reserved</span>
+            </div>
+            <div class="footer-box" id="part-2">
+                <h5>Nav Links</h5>
+                <div class="footer-nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Partner</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">About</a></li>
+                </div>
+            </div>
+            <div class="footer-box" id="part-3">
+                <h5>Services</h5>
+                <div class="footer-services-links">
+                    <li><a href="">Get Qoute</a></li>
+                    <li><a href="">Request Pickup</a></li>
+                </div>
+            </div>
+            <div class="footer-box" id="part-4">
+                <h5>Connect with us</h5>
+                <div class="footer-social-links">
+                    <li><a href=""><img src="../images/facbook.png" alt="facebook-icon"></a></li>
+                    <li><a href=""><img src="../images/twitter.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/instagram.png" alt=""></a></li>
+                </div>
+            </div>
+        </section>
 
     </footer>
 </body>
 <script src="./js/app.js"></script>
+
 </html>

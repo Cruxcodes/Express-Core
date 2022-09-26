@@ -28,10 +28,3 @@ dropdown_1.addEventListener('click', () => {
 })
 
 document.getElementById('year').innerHTML = new Date().getFullYear();
-
-
-//function  Toggle() {
-    //navbar.classList.toggle('active');
-    //navbar.style.display = 'block';
-    //hamburger.classList.toggle('active');
-//}

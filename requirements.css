@@ -150,14 +150,14 @@
         width: 100%;
     }
 
-    .destribution-service {
+    .distribution-service {
 
         background: #FEFEFE;
         padding-top: 16px;
 
     }
 
-    .destribution-service-content {
+    .distribution-service-content {
         text-align: center;
 
 
@@ -189,9 +189,9 @@
         list-style: none;
     }
 
-    .destribution-service {
+    .distribution-service {
         font-weight: 800;
-        font-size: 40px;
+        font-size: 25px;
     }
 
     .distribution-list>li>span {

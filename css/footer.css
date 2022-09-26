@@ -21,7 +21,7 @@ body{
 }
 .footer-box h5{
     color: #fff;
-    margin-bottom: 0.4rem;
+    margin-bottom: 24px;
 }
 .footer-box input{
     height: 30px;
@@ -40,7 +40,7 @@ body{
     padding: 0.2rem;
     outline: none;
     border-width: 0rem;
-    background: rgb(55, 106, 165);
+    background: #1C6DE8;
     color: #fff;
     cursor: pointer;
 }
@@ -57,8 +57,38 @@ body{
     flex-direction: row;
 }
 .footer-box span{
-    color: rgb(201, 187, 187);
+    color: #fff;
     font-size: 0.8rem;
+}
+
+.footer-nav-links,.footer-services-links{
+    display: inline-block;
+}
+.footer-nav-links li, .footer-services-links li{
+    margin: 0.9rem 0rem;
+    list-style-type: none;
+}
+.footer-nav-links li a, .footer-services-links li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #BAD5FF;
+}
+
+.footer-social-links{
+    display: flex;
+}
+.footer-social-links li{
+    list-style-type: none;
+    display: inline;
+}
+.footer-social-links li a{
+    text-decoration: none;
+}
+.footer-social-links li img{
+    color: #fff;
+    width: 20px;
+    margin: 0rem 0.6rem;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:768px){

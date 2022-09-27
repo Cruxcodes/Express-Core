@@ -145,7 +145,6 @@
         background: var(--primary-Color);
         cursor: pointer;
         color: white;
-
     }
 
 
@@ -413,7 +412,7 @@
 
     .footer-cta {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
     }
 

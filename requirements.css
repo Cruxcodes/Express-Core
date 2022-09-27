@@ -29,10 +29,7 @@
     box-sizing: border-box;
 
 }
-
-
 /* end css reset */
-
 /* desktop breakpoint */
 
 @media screen and (max-width:1440px) {

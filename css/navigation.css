@@ -11,7 +11,7 @@ body{
 nav{
     width: 100%;
     height: 70px;
-    padding: 1rem 1.8rem;
+    padding: 1rem 2rem 1rem 2rem;
     background: #fff;
     display: flex;
     align-items: center;
@@ -25,16 +25,15 @@ nav{
     height: auto;
     margin-top: 0.5rem;
 }
-navbar{
-    margin: auto;
-}
 navbar ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 navbar ul li{
     list-style-type: none;
-    margin: 0rem 1.1rem;
+    margin: 0rem 1rem;
     display: inline;
 }
 
@@ -44,15 +43,39 @@ navbar ul li a{
     font-size: 18px;
     text-transform: capitalize;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
 }
 navbar ul li a:hover{
     border-bottom: 2px solid #1F78FF;;
 }
 
+/*======login and sign up button========*/
+.user{
+    margin-left: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user a{
+    text-decoration: none;
+    margin: 0rem 0.4rem;
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.user a:hover{
+   border-bottom: 0px;
+}
+.user #sign-up{
+    border: 1.5px solid #1F78FF;
+    padding: 4px 5px;
+    color: #1F78FF;;
+    border-radius: 0.3rem;
+}
+
 /*==========dropdown ul styling==============*/
-/*.ul-2{
+.ul-2{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -74,26 +97,8 @@ navbar ul li a:hover{
 }
 .show{
     visibility: visible;
-}*/
+}
 
-/*======login and sign up button========*/
-.login{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.login a{
-    text-decoration: none;
-    margin: 0rem 0.6rem;
-    color: #000;
-    font-size: 1.1rem;
-}
-.login #sign-up{
-    border: 1.5px solid #1F78FF;
-    padding: 8px 12px;
-    border-radius: 0.3rem;
-}
 /*===========hamburger=========*/
 .hamburger{
     display: none;
@@ -108,14 +113,33 @@ navbar ul li a:hover{
 }
 
 /*=============media query===========*/
+@media screen and (max-width:940px){
+    nav{
+        padding: 1rem 1.5rem;
+    }
+    navbar ul li a{
+        font-size: 16.5px;
+    }
+    .user{
+        margin-left: 4rem;
+    }
+}
+
+
 @media screen and (max-width:850px){
+    nav{
+        padding: 1rem 1.3rem;
+    }
     navbar ul li{
-        margin: 0rem 0.8rem;
+        margin: 0rem 0.7rem;
         display: inline;
     }
     navbar ul li a{
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .user{
+        margin-left: 2.7rem;
     }
     .logo img{
         max-width: 50px;
@@ -123,17 +147,17 @@ navbar ul li a:hover{
         height: auto;
         margin-top: 0.5rem;
     }
-    .login a{
-        margin: 0rem 0.5rem;
-        font-size: 1rem;
-    }
 }
 
 
 @media screen and (max-width:768px){
+    nav{
+        padding: 0.5rem 2rem;
+        height: 60px;
+    }
     navbar{
         position: absolute;
-        top: 61px;
+        top: 54px;
         left: 0;
         right: 0;
         width: 100%;
@@ -145,23 +169,29 @@ navbar ul li a:hover{
     navbar ul{
         display: flex;
         flex-direction: column;
-        height: 300px;
+        height: 350px;
         margin: 0.5rem auto 0rem 0rem;
         padding: 1rem 0rem;
-        /*transition: 0.5s;*/
-        background: #1F78FF;
+        background: #0D326B;
         text-align: center;
         transition: all 0.5s ease-in-out;
         transition-duration: all 2s ease;
         width: 100%;
     }
+    navbar ul>div{
+        display: flex;
+        flex-direction: column;
+    }
     .active{
-        height: 300px;
+        height: 350px;
     }
     .hamburger{
         display: block;
-        margin: auto;
-        padding-left: 5rem;
+        margin: aut;
+        padding-left: rem;
+    }
+    .hamburger.active{
+        height: 5px;
     }
 
     .bar{
@@ -187,34 +217,36 @@ navbar ul li a:hover{
         transform: translateY(-20px) rotate(-30deg);
     }
     navbar ul li{
-        margin: 1rem 0rem;
+        margin: 0.8rem 0rem;
     }
     navbar ul li a{
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
     .logo img{
-        max-width: 50px;
+        max-width: 55px;
         width: 100%;
         height: auto;
         margin-top: 0.5rem;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0rem;
+    }
+    .user a{
+        color: #fff;
+        margin-bottom: 0.7rem;
     }
 }
 
 @media screen and (max-width:500px){
     nav{
-        padding: 1rem;
-    }
-    .login a{
-        margin: 0rem 0.3rem;
-        font-size: 1rem;
-    }
-    .login #sign-up{
-        padding: 5px 8px;
-        border-radius: 0.3rem;
+        padding: 0.5rem 1.2rem;
     }
     .logo img{
-        max-width: 45px;
+        max-width: 50px;
         width: 100%;
     }
 }
@@ -222,13 +254,11 @@ navbar ul li a:hover{
 @media screen and (max-width:400px){
     .hamburger{
         display: block;
-        margin: auto;
-        padding-left: 3rem;
+        margin: aut;
+        padding-left: rem;
     }
     .bar{
         line-height: 0.4;
     }
-    nav{
-        padding: 1rem 0.6rem;
-    }
+
 }

@@ -27,6 +27,8 @@ dropdown_1.addEventListener('click', () => {
     ul_1.classList.toggle('show');
 })
 
+document.getElementById('year').innerHTML = new Date().getFullYear();
+
 
 //function  Toggle() {
     //navbar.classList.toggle('active');

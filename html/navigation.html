@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--#0D326B;footer-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,48 +13,120 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
     <title>Express-Core</title>
 </head>
 <body>
-    <nav>
+    <nav><!---navigation bar-->
         <div class="logo">
             <a href="#"><img src="../images/logo.png" alt="page-logo"></a>
         </div>
-        <div class="hamburger" id="hamburger"  onclick="">
+        <div class="hamburger" id="hamburger">
             <span class="bar">—</span>
             <span class="bar">—</span>
             <span class="bar">—</span>
         </div>
         <navbar class="links-wrapper">
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="">services </a><span id="dropdown"> </span>
-                    <ul class="ul-2" id="service" style="display: none;">
-                        <li class="drop"><a href="#">service1</a></li>
-                        <li class="drop"><a href="#">service2</a></li>
-                        <li class="drop"><a href="#">service3</a></li>
-                        <li class="drop"><a href="#">service4</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href=""> resources </a><span id="dropdown-1"></span>
-                    <ul class="ul-2" id="resources" style="display: none;">
-                        <li class="drop"><a href="#">resources1</a></li>
-                        <li class="drop"><a href="#">resources2</a></li>
-                        <li class="drop"><a href="#">resources3</a></li>
-                        <li class="drop"><a href="#">resources4</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="#">partner</a></li>
-                <li class="nav-item"><a href="#about">about</a</li>
-                <li class="nav-item"><a href="#">contact us</a</li>
+
+                <div>
+                    <li class="nav-item"><a href="">services </a><span id="dropdown"> +</span>
+                        <ul class="ul-2" id="service">
+                            <li class="drop"><a href="./service.html" target="_blank">service1</a></li>
+                            <li class="drop"><a href="#">service2</a></li>
+                            <li class="drop"><a href="#">service3</a></li>
+                            <li class="drop"><a href="#">service4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""> resources </a><span id="dropdown-1">+</span>
+                        <ul class="ul-2" id="resources">
+                            <li class="drop"><a href="#resources1">resources1</a></li>
+                            <li class="drop"><a href="#">resources2</a></li>
+                            <li class="drop"><a href="#">resources3</a></li>
+                            <li class="drop"><a href="#">resources4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#partner">partner</a></li>
+                    <li class="nav-item"><a href="#about">about</a</li>
+                    <li class="nav-item"><a href="#contact-us">contact us</a</li>
+                </div>
+                <section class="user">
+                    <a href="#log-in" id="log-in" class="nav-item">Log in</a>
+                    <a href="#sign-up" id="sign-up" class="nav-item">Sign up</a>
+                </section>
             </ul>
         </navbar>
-        <div class="login">
-            <a href="#" id="log-in">Log in</a>
-            <a href="#" id="sign-up">Sign up</a>
-        </div>
+    </nav><!---navigation end-->
 
-    </nav>
+    <main>
+        <div class="heading">
+            <h1>Welcome Back!</h1>
+            <p>Log In to your account</p>
+        </div>
+        <section class="form-container">
+            <form action="" method="post">
+                <input type="email" name="email" id="" placeholder="Enter email address">
+                <input type="password" name="password" id="" placeholder="Enter password address">
+                <span>forgot password</span>
+                <input type="submit" value="Log In">
+                <span>Don't have account? <a href="">Login</a></span><br><br>
+
+                <p>-------- or --------</p><br><br>
+
+                <button><a href="https://www.google.com">Log In with Google</a></button>
+                <button><a href="https://www.facebook.com">Log In with Facebook</a></button><br><br>
+
+                <p>Express Core Partner <a href="">click here</a></p>
+
+            </form>
+        </section>
+
+    </main>
+    <footer><!-------footer---->
+        <section class="footer-wrapper">
+            <div class="footer-box" id="part-1">
+                <h5>Subscribe to our newsletter</h5>
+               <div class="subscribe">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+               </div>
+
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="page-logo">
+                </div>
+                <span>&copy; 2022 ExpressCore LTD  All Rights Reserved</span>
+            </div>
+            <div class="footer-box" id="part-2">
+                <h5>Nav Links</h5>
+                <div class="footer-nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Partner</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">About</a></li>
+                </div>
+            </div>
+            <div class="footer-box" id="part-3">
+                <h5>Services</h5>
+                <div class="footer-services-links">
+                    <li><a href="">Get Qoute</a></li>
+                    <li><a href="">Request Pickup</a></li>
+                </div>
+            </div>
+            <div class="footer-box" id="part-4">
+                <h5>Connect with us</h5>
+                <div class="footer-social-links">
+                    <li><a href=""><img src="../images/facbook.png" alt="facebook-icon"></a></li>
+                    <li><a href=""><img src="../images/twitter.png" alt=""></a></li>
+                    <li><a href=""><img src="../images/instagram.png" alt=""></a></li>
+                </div>
+            </div>
+        </section>
+
+    </footer>
     <script src="../js/app.js"></script>
 </body>
 </html>

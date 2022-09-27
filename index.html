@@ -12,46 +12,47 @@
 </head>
 
 <body>
-    <header><nav>
+    <header><nav><!---navigation bar-->
         <div class="logo">
-            <a href="#"><img src="../images/logo.png" alt="page-logo"></a>
+            <a href="#"><img src="./images/logo.png" alt="page-logo"></a>
         </div>
-        <div class="hamburger" id="hamburger"  onclick="">
+        <div class="hamburger" id="hamburger">
             <span class="bar">—</span>
             <span class="bar">—</span>
             <span class="bar">—</span>
         </div>
         <navbar class="links-wrapper">
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="">services </a><span id="dropdown"> </span>
-                    <ul class="ul-2" id="service" style="display: none;">
-                        <li class="drop"><a href="#">service1</a></li>
-                        <li class="drop"><a href="#">service2</a></li>
-                        <li class="drop"><a href="#">service3</a></li>
-                        <li class="drop"><a href="#">service4</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href=""> resources </a><span id="dropdown-1"></span>
-                    <ul class="ul-2" id="resources" style="display: none;">
-                        <li class="drop"><a href="#">resources1</a></li>
-                        <li class="drop"><a href="#">resources2</a></li>
-                        <li class="drop"><a href="#">resources3</a></li>
-                        <li class="drop"><a href="#">resources4</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="#">partner</a></li>
-                <li class="nav-item"><a href="#about">about</a</li>
-                <li class="nav-item"><a href="#">contact us</a</li>
+
+                <div>
+                    <li class="nav-item"><a href="">services </a><span id="dropdown"> +</span>
+                        <ul class="ul-2" id="service">
+                            <li class="drop"><a href="./service.html" target="_blank">service1</a></li>
+                            <li class="drop"><a href="#">service2</a></li>
+                            <li class="drop"><a href="#">service3</a></li>
+                            <li class="drop"><a href="#">service4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href=""> resources </a><span id="dropdown-1">+</span>
+                        <ul class="ul-2" id="resources">
+                            <li class="drop"><a href="#resources1">resources1</a></li>
+                            <li class="drop"><a href="#">resources2</a></li>
+                            <li class="drop"><a href="#">resources3</a></li>
+                            <li class="drop"><a href="#">resources4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#partner">partner</a></li>
+                    <li class="nav-item"><a href="#about">about</a</li>
+                    <li class="nav-item"><a href="#contact-us">contact us</a</li>
+                </div>
+                <section class="user">
+                    <a href="#log-in" id="log-in" class="nav-item">Log in</a>
+                    <a href="#sign-up" id="sign-up" class="nav-item">Sign up</a>
+                </section>
             </ul>
         </navbar>
-        <div class="login">
-            <a href="#" id="log-in">Log in</a>
-            <a href="#" id="sign-up">Sign up</a>
-        </div>
-
-    </nav>
-    
+    </nav><!---navigation end-->
 </header>
     <main role="main" >
         <section class="main-container">
@@ -90,6 +91,7 @@
                 </div>
                 <div class="requirement-button-container">
                     <a href="#">Continue Registration</a>
+
                 </div>
             </article>
         </section>
@@ -104,7 +106,7 @@
                </div>
 
                 <div class="footer-logo">
-                    <img src="../images/logo.png" alt="page-logo">
+                    <img src="./images/logo.png" alt="page-logo">
                 </div>
                 <span>&copy; 2022 ExpressCore LTD  All Rights Reserved</span>
             </div>
@@ -128,9 +130,9 @@
             <div class="footer-box" id="part-4">
                 <h5>Connect with us</h5>
                 <div class="footer-social-links">
-                    <li><a href=""><img src="../images/facbook.png" alt="facebook-icon"></a></li>
-                    <li><a href=""><img src="../images/twitter.png" alt=""></a></li>
-                    <li><a href=""><img src="../images/instagram.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/facbook.png" alt="facebook-icon"></a></li>
+                    <li><a href=""><img src="./images/twitter.png" alt=""></a></li>
+                    <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
                 </div>
             </div>
         </section>

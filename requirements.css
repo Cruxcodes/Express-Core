@@ -99,7 +99,7 @@
     .requirement-button-container {
         display: flex;
         justify-content: center;
-        margin-top: 2em;
+        margin: 2em;
         text-align: center;
     }
 
@@ -313,7 +313,7 @@
     .requirement-button-container {
         display: flex;
         justify-content: center;
-        margin-top: 2em;
+        margin: 2em;
         text-align: center;
     }
 

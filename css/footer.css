@@ -120,16 +120,6 @@ body{
         grid-area: part-4;
         margin: 1rem auto;
     }
-
-    /*.footer-box{
-        flex-basis: 50%;
-        margin-bottom: 1rem;
-    }
-    .footer-box h5{
-        color: #fff;
-        padding-top: 1.3rem;
-        margin-bottom: px;
-    }*/
 }
 
 @media screen and (max-width:600px){

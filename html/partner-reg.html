@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Express-core; a delivery web application.">
+    <link rel="icon" href="../images/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link href="../css/register.css" rel="stylesheet" type="text/css" />
+    <script src="../js/components/navbar.js" type="text/javascript" defer></script>
+    <script src="../js/components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <main>
+      <!-- Your page's content -->
+      <div class="regForms">
+        <div class="top-form">
+        <h2>Sign Up as a Partner</h2>
+        <p>Complete the form below and submit your application</p>
+        </div>
+
+        <table class="Registration">
+            <form action="">
+                <tr>
+                    <td class="rgwidth">
+                      <span style="float: left; width: 45%; margin: 0;padding: 0;"><input 
+                          class="rounded"
+                          type="text" name="fname" id="fname" 
+                          style="width: 100%;"
+                          placeholder="Enter first name"></span>
+                      <span style="float: right; width: 45%; margin: 0;"><input 
+                          class="rounded"
+                          type="text" name="lname" id="lname" 
+                          style="width: 100%;"
+                          placeholder="Enter last name"></span>
+                        
+                    </td>
+                    
+                </tr>
+  
+                <tr>
+                    <td class="rgwidth">
+                        <input 
+                        class="rounded"
+                        type="email" name="mail" id="mail"
+                        size=""
+                        placeholder="Enter email address">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rgwidth">
+                        <input
+                        class="rounded"
+                        type="tel" name="phonenumbe" id="phone"
+                        placeholder="Enter your phone number"
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Upload the corresponding Documents for verification</b></span><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="float: left; margin: 0; text-align: start;"
+                        class="upload-fie">Select Document
+                            <label for="upload-file"><span >
+                                <input class="butn" type="button" value="Upload"
+                                style="float: right;">
+                                <img style="float: right;" src="../images/arrow-vector.svg" alt="vector"
+                                ></span>
+                            </label>
+                                <input class="rounded" type="file" name="file" id="upload-file" multiple
+                                placeholder="Select Document"
+                                />
+                            
+                        </span>
+                        
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><p file-list-head>Uploaded Documents</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="file-container">
+                        <div class="cont">
+                            <p class="cont-2">Document name</p>
+                            <img src="../images/del-vector.png" alt=""# class="cont-1">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="file-container">
+                        <div class="cont">
+                            <p class="cont-2">Document name</p>
+                            <img src="../images/del-vector.png" alt=""# class="cont-1">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="file-container">
+                        <div class="cont">
+                            <p class="cont-2">Document name</p>
+                            <img src="../images/del-vector.png" alt=""# class="cont-1">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="file-container">
+                        <div class="cont">
+                            <p class="cont-2">Document name</p>
+                            <img src="../images/del-vector.png" alt=""# class="cont-1">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-submit">
+                        <button class="btn">Submit</button>
+                      </td>
+                </tr>
+
+            </form>
+        </table>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="../js/components/app.js"></script>
+  </body>
+<html>

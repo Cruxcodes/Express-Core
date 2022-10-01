@@ -11,11 +11,11 @@
     --font-family2: "Poppins";
     --primary-Color: #1F78FF;
     --service-heading-color: #E9F2FF;
-    --service-hero-image: url("./images/service-hero1.png");
-    --distribution-image-van: url("./images/van.png");
-    --cadet-icon-up: url("./images/icon-arrow-up.svg");
-    --cadet-icon-down: url("./images/icon-arrow-down.svg");
-    --about-us-hero: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6), hsla(216, 100%, 56%, 0)), url("./images/unsplash_kWUZKKBR2Ag.png")
+    --service-hero-image: url("../images/service-hero1.png");
+    --distribution-image-van: url("../images/van.png");
+    --cadet-icon-up: url("../images/icon-arrow-up.svg");
+    --cadet-icon-down: url("../images/icon-arrow-down.svg");
+    --about-us-hero: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6), hsla(216, 100%, 56%, 0)), url("../images/unsplash_kWUZKKBR2Ag.png")
 }
 
 /* end variable specification */
@@ -34,7 +34,6 @@
 /* end css reset */
 /* desktop breakpoint */
 
-@media screen and (max-width:1440px) {
     body {
         font-family: var(--font-family1);
 
@@ -63,6 +62,13 @@
         margin: 0% 5%;
 
         padding: 0% 5%;
+
+    }
+    .main-container-detailed {
+
+        height: 100%;
+        margin-left:5%;
+        padding-left:5%;
 
     }
 
@@ -311,12 +317,15 @@
 
     .company-details-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        margin:3em;
 
     }
+  
 
     .company-details {
-        padding: 20px 0px;
+        padding: 20px 10px;
+        
 
     }
 
@@ -342,7 +351,85 @@
         width: 655px;
         height: 844px;
     }
-}
+
+    /* card-container */
+    .card-description-container {
+        position: relative;
+        margin-top: -15rem;
+        width: 365px;
+        height: 206px;
+
+        background: linear-gradient(0deg, #000000 50.2%, rgba(207, 207, 205, 0) 87.21%);
+    }
+
+    .card-description-container>img {
+        width: 365px;
+        height: 365px;
+    }
+
+    .card-title {
+        margin: 4rem 2rem;
+        padding-top: 2.5em;
+        width: 252px;
+        height: 40px;
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: #FBFBFB;
+    }
+
+    .card-discription {
+        padding: 0rem 2rem;
+
+        height: 36px;
+
+        /* Body/Medium/body main */
+
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 36px;
+
+
+
+        color: #FFBF61;
+    }
+
+    .main-details-container>p{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        color: #121212;
+
+        opacity: 0.8;
+    }
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        
+        background-color: var(--primary-Color);
+      }
+      .team-container{
+        display:flex;
+        flex-direction: row;
+        background-color: hsla(37, 100%, 95%, 1);
+        justify-content: center;
+        
+      }
+
+
 
 /* mobile  breakpoint */
 @media screen and (max-width:414px),
@@ -356,6 +443,14 @@
         font-weight: 800;
         padding: 10px 0px 54px 0px;
         text-align: center;
+    }
+    .main-container-detailed {
+
+        height: 100%;
+        margin-left: 5%;
+
+        padding-left:3%;
+
     }
 
     .main-container {
@@ -565,5 +660,12 @@
         height: 544px;
     }
 
-}
+    .paragraph{
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 40px;
+        text-align:justify;
+        opacity: 0.8;
+    }
 
+}

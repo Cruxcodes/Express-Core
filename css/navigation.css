@@ -239,6 +239,10 @@ navbar ul li a:hover{
         color: #fff;
         margin-bottom: 0.7rem;
     }
+    .user #sign-up{
+    border: 1.5px solid #1F78FF;
+    color: #fff;;
+}
 }
 
 @media screen and (max-width:500px){

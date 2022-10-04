@@ -273,7 +273,7 @@ navbar ul li ul li a{
     navbar ul li ul{
         position: relative;
         left: 0;
-        background: ;
+        background: #1F78FF;
         display: none;
         color: #fff;
     }

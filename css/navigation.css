@@ -81,7 +81,7 @@ navbar ul li a:hover{
 navbar ul li ul{
     position: absolute;
     left: 0;
-    backgroun: rgb(52, 133, 209);
+    background: rgb(52, 133, 209);
     display: none;
     color: #fff;
 }

@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #F5F5F6;
+}
+main{
+    padding: 6rem 0rem;
+    align-items: center;
+    text-align: center;
+}
+.contact-heading{
+    margin-bottom: 3rem;
+}
+.contact-heading p{
+    padding-top: 0.4rem;
+}
+.contact-wrapper{
+    margin: auto;
+    height: auto;
+    border: 1px solid red;
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+}
+.contact-box{
+    padding: 2rem;
+}
+#contact-info{
+    background-color: #1F78FF;
+    color: #F5F5F6;
+    flex-basis: 42%;
+    padding: 0rem;
+}
+contact-info img{
+    width: 70px;
+    position: relative;
+    top: -70px;
+    left: 60px;
+}
+#contact-info article{
+    padding: 1rem 1.2rem;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+#contact-info article h3{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#contact-info ul{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1.3rem 0rem;
+}
+#contact-info ul li{
+    padding-bottom: 0.8rem;
+    margin-left: 1rem;
+    list-style: none;
+}
+#contact-info #down-img{
+    width: 70px;
+    position: relative;
+    top: 0px;
+    left: -90px;
+}
+.contact-box form{
+    margin: auto;
+}
+.contact-box input:nth-child(1), input:nth-child(2){
+    height: 40px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #898B8F;
+    max-width: 49%;
+}
+.contact-box .inputbox{
+    width: 100%;
+    height: 40px;
+    padding: 0.5rem;
+    margin-top: 1.1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #898B8F;
+}
+.contact-box #message{
+    height: 150px;
+    background: #F5F5F6;
+}
+.contact-box #submit{
+    background: #1F78FF;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+@media screen and (max-width:600px){
+    main{
+        padding: 6rem 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0.2rem;
+    }
+    .contact-box input:nth-child(1), input:nth-child(2){
+        width: 50%;
+    }
+    .contact-wrapper #contact-info{
+        order: 2;
+    }
+    .contact-heading h2{
+        font-size: 1.1rem;
+    }
+    .contact-heading p{
+        font-size: 0.8rem;
+    }
+
+}

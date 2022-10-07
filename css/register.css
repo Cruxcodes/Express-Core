@@ -1,39 +1,33 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
     box-sizing: border-box;
 }
+html,body {
+    height: 100%;
+    width: 100%;
+}
 body{
-    margin: 0;
-    padding: 0;
     background-color: #EBECEC;
     font-family: "Plus Jakarta Sans", sans-serif;
-    
 }
-
-
 .regForms {
-    
-    text-align: center;
+    margin: 0;
+    padding: 0;
     padding-top: 10%;
     padding-bottom: 10%;
-    width: 100%;
-    
-}
-div .top-form{
-   margin: auto; 
+    width: auto;
+    text-align: center;
 }
 
 .top-form h2  {
-    margin: auto;
     padding: 10px;
     font-weight: 800;
     font-size: 40px;
     text-align: center;
-   
 }
 .top-form p  {
-    margin: auto;
     padding: 20px;
     padding-bottom: 2rem;
     font-weight: 500;
@@ -41,10 +35,8 @@ div .top-form{
     text-align: center;
 }
 .Registration {
-    box-sizing: border-box;
     margin: auto;
     padding: 30px;
-    width: 40%;
     height: auto;
     background-color:#FFFFFF ;
     padding-bottom: 2rem;
@@ -69,7 +61,7 @@ input.rounded {
     outline: none;
     border-radius: 12px;
     height: 28px;
-    width:100%; 
+    width:500px; 
     align-items: center;
     justify-content: center;
     color: #898B8F;
@@ -148,6 +140,10 @@ input:hover,
 .color-l-pale {
     color: #7B7D81;
 }
+label .color-l-pale,.bluebold {
+    font-weight: 400;
+    font-size: 16px;
+}
 
 .btn{
     display: flex;
@@ -184,15 +180,110 @@ input:hover,
     border-bottom: 2px solid #898B8F;
     margin: auto;
 }
-
 @media screen and (max-width:700px) {
     body {
         text-align: center;
     }
+    
 }
 
 @media screen and (max-width:500px) {
     body {
         text-align: center;
     }
+}
+
+/* global-partnership page */
+.global-main-container {
+    padding: 75px 0px 40px 0px;
+    width: 100%;
+}
+.global-main-heading {
+    text-align: center;
+    padding: 28px;
+}
+.global-top-bg-text {
+    background-image: url("../images/hq-image.png");
+    background: 0,0,0,0.5;
+    width: 100%;
+    height: 100%;
+    padding: 5% 10%;
+    padding-top: 12%;
+
+    
+}
+.global-bottom-bg-text{
+    background-image: url("../images/global-part-bg.png");
+    height: 10%;
+    width: 100%;
+    padding: 5% 10%;
+}
+.global-top-bg-text a {
+    color: #1F78FF;
+    text-decoration: none;
+}
+.global-top-bg-text h4 {
+    padding-bottom: 14px;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.global-top-bg-text p, a {
+    font-weight: 500;
+    font-size: 24px;
+    width: 41%;
+}
+.global-article {
+    padding: 12px 36px; 
+    width: 100%;
+}
+.global-article p {
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    
+}
+.global-article h4 {
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+}
+.global-article ul {
+    padding-left: 36px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+}
+.global-article-heading2 {
+    font-weight: 500;
+}
+.global-bottom-bg-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+   
+    
+}
+.global-bottom-bg-text h4 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 56px;
+}
+.bottom-blue {
+    color: #1F78FF;
+}
+.global-bottom-butn {
+    background-color: #1F78FF;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+@media screen and (max-width: 700px) {
+    
 }
